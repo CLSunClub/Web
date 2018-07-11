@@ -1,0 +1,42 @@
+@font-face {src: url(noto.otf );
+	font-family: noto;}
+a{text-decoration:none;}    
+a:hover {background-color: #111111;
+	text-decoration:none;
+} 
+#navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+.sun {float:left;
+	padding: 20px;
+font-size: 32px;
+}
+.list{
+ color: white;
+ float: right;	
+ display: inline;
+ list-style-type: none;
+ padding-right: 20px;
+text-align: right;
+background-color: #333333;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+
+}
+ul{ color: white;}
+body {background-color:#FFFFFF;
+	font-family: noto;
+}
+
