@@ -1,10 +1,15 @@
-@font-face {src: url(noto.otf );
+/*字體*/
+@font-face {src: url(noto.otf);
 	font-family: noto;}
+@font-face {src: url(wt071.ttf);
+	font-family: wt;}
+/*導覽列*/
 a{text-decoration:none;}    
 a:hover {background-color: #111111;
 	text-decoration:none;
 } 
 #navlist {
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -20,7 +25,7 @@ font-size: 32px;
  float: right;	
  display: inline;
  list-style-type: none;
- padding-right: 20px;
+ padding-right: 20px auto;
 text-align: right;
 background-color: #333333;
 }
@@ -33,10 +38,128 @@ li a {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
-
 }
 ul{ color: white;}
+
 body {background-color:#FFFFFF;
 	font-family: noto;
+	margin-top: 0px;
 }
+/*標題*/
+.title{font-size: 200%}
+/*封面*/
+.start {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cover{ 
+	display: block;
+	max-width:70%;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    max-height:50%;
+    margin-left: auto;
+	margin-right: auto;
+}
+/*我們是誰*/
+.who {	border-left: 10px;
+	border-right:10px;
+	border-bottom:10px ;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+	width:70%;
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	margin-left: auto;
+    margin-right: auto;
+	background: #fffff0;
 
+}
+#ru{padding:3% }
+#sun_nonface{padding: 3%}
+	
+	/*我們在幹嘛*/
+.what{	border-left: 0px;
+	border-right:10px;
+	border-bottom:10px ;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+	padding: inherit;
+	margin: inherit;
+	width:70%;
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	margin-left: auto;
+    margin-right: auto;
+	background: #fffff0;
+
+}
+#doyoudo{padding:3% }
+#horn{padding: 3%}
+
+
+/*扶少團*/
+.react {	border-left: 0px;
+	border-right:10px;
+	border-bottom:10px ;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+	padding: inherit;
+	margin: inherit;
+	width:70%;
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	margin-left: auto;
+    margin-right: auto;
+	background: #fffff0;
+}
+#interact{padding:3% }
+#logo{padding:3%;}
+
+
+/*可以得到什麼*/
+.recieve{	border-left: 0px;
+	border-right:10px;
+	border-bottom:10px ;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+	padding: inherit;
+	margin: inherit;
+	width:70%;
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	margin-left: auto;
+    margin-right: auto;
+	background: #fffff0;
+
+}
+#gain{padding:3%;}
+#scroll{padding:5%;}
+
+/*加入方法*/
+.join {
+	border-left: 0px;
+	border-right:10px;
+	border-bottom:10px ;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+	padding: inherit;
+	margin: inherit;
+	width:70%;
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	margin-left: auto;
+    margin-right: auto;
+	background: #fffff0;
+
+}
+#us{padding:3% }
+#fist{padding: 3%}
+/*尾端*/
+footer{ 
+  padding: 20px;
+  background-color: whitesmoke;
+  position: relative;
+  bottom: 0;
+  width:100%;
+  float: left;}
