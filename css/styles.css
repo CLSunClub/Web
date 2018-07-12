@@ -1,72 +1,71 @@
 /*字體*/
 @font-face {src: url(noto.otf);
 	font-family: noto;}
-@font-face {src: url(wt071.ttf);
-	font-family: wt;}
 /*導覽列*/
-a{text-decoration:none;}    
-a:hover {background-color: #111111;
-	text-decoration:none;
-} 
-#navlist {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+.nav ul{
+  background:#444;
+  list-style-type: none;
+  display:flex;
+  flex-direction:column;
+  
 }
-.sun {float:left;
-	padding: 20px;
-font-size: 32px;
+.nav ul li a{
+  color:#f9f9f9;
+  display:block;
+  padding: 0.8rem 1rem ;
+  text-decoration: none;
 }
-.list{
- color: white;
- float: right;	
- display: inline;
- list-style-type: none;
- padding-right: 20px auto;
-text-align: right;
-background-color: #333333;
+.nav ul li a:hover{
+  background:rgba(0,0,0, .4);
 }
-li a {
-    display: block;
-    color: white;
+.text{text-align: left;
+font-size: 200%;
+color:white;}
+@media only screen and (min-width:30em){
+ .nav ul{
+    flex-direction:row;
+    justify-content:space-between;
+  }
+ .nav ul li{
+    flex:1 0 auto;
     text-align: center;
-    text-decoration: none;
-    padding-top: 45px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 15px;
+	color:white;
+  }
+.text{
+	flex:1 0 auto;
+	text-align: center;
+	color:white;
+	font-size: 200%;}	
 }
-ul{ color: white;}
+
 
 body {background-color:#FFFFFF;
 	font-family: noto;
-	margin-top: 0px;
 }
 /*標題*/
 .title{font-size: 200%}
 /*封面*/
 .start {
-	display: block;
+	display: flex;
+	align-items:center;
 	margin-left: auto;
 	margin-right: auto;
 }
 #cover{ 
-	display: block;
-	max-width:70%;
+	display: flex;
+	align-items:center;	max-width:70%;
 	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
     max-height:50%;
     margin-left: auto;
 	margin-right: auto;
 }
+
 /*我們是誰*/
 .who {	border-left: 10px;
 	border-right:10px;
 	border-bottom:10px ;
 	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
-	width:70%;
+	width:90%;
     display: flex;
     align-items:center;
 	z-index: -1;
@@ -85,7 +84,7 @@ body {background-color:#FFFFFF;
 	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
 	padding: inherit;
 	margin: inherit;
-	width:70%;
+	width:90%;
     display: flex;
     align-items:center;
 	z-index: -1;
@@ -105,7 +104,7 @@ body {background-color:#FFFFFF;
 	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
 	padding: inherit;
 	margin: inherit;
-	width:70%;
+	width:90%;
     display: flex;
     align-items:center;
 	z-index: -1;
@@ -113,9 +112,8 @@ body {background-color:#FFFFFF;
     margin-right: auto;
 	background: #fffff0;
 }
-#interact{padding:3% }
+#interact{padding:3% } 
 #logo{padding:3%;}
-
 
 /*可以得到什麼*/
 .recieve{	border-left: 0px;
@@ -124,7 +122,7 @@ body {background-color:#FFFFFF;
 	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
 	padding: inherit;
 	margin: inherit;
-	width:70%;
+	width:90%;
     display: flex;
     align-items:center;
 	z-index: -1;
@@ -144,7 +142,7 @@ body {background-color:#FFFFFF;
 	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
 	padding: inherit;
 	margin: inherit;
-	width:70%;
+	width:90%;
     display: flex;
     align-items:center;
 	z-index: -1;
@@ -155,11 +153,77 @@ body {background-color:#FFFFFF;
 }
 #us{padding:3% }
 #fist{padding: 3%}
-/*尾端*/
-footer{ 
-  padding: 20px;
-  background-color: whitesmoke;
-  position: relative;
-  bottom: 0;
-  width:100%;
-  float: left;}
+@media only screen and (max-width:600px){
+	.start {
+	display: flex;
+	align-items:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cover{ 
+	display: flex;
+	align-items:center;
+	max-width:100%;
+    height:auto;
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    max-height:100%;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+/*我們是誰*/
+.who {	
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	background: #fffff0;
+}
+#ru{padding:3%;}
+#sun_nonface{display: none;}
+	
+	/*我們在幹嘛*/
+.what{
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    display: flex;
+    align-items:center;
+	z-index: -1;
+	background: #fffff0;
+}
+#doyoudo{padding:3% }
+#horn{display: none;}
+
+
+/*扶少團*/
+.react {
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    display: flex;
+    align-items:center;
+	z-index: -1;
+}
+#interact{padding:3% } 
+#logo{display: none;}
+
+/*可以得到什麼*/
+.recieve{
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    display: flex;
+    align-items:center;
+	z-index: -1;
+   background: #fffff0;
+}
+#gain{padding:3%;}
+#scroll{display: none;}
+
+/*加入方法*/
+.join {
+	box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.34);
+    display: flex;
+    align-items:center;
+	z-index: -1;
+ 	background: #fffff0;
+}
+#us{padding:3% }
+#fist{display: none;}
+	
+}
